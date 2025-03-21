@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, render_template
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -113,4 +114,4 @@ def transcript_api():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
