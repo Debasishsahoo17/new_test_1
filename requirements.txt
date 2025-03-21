@@ -3,3 +3,5 @@ youtube-transcript-api
 scikit-learn
 nltk
 numpy
+yt-dlp
+gunicorn
