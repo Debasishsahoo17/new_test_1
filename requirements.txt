@@ -1,0 +1,5 @@
+Flask
+youtube-transcript-api
+scikit-learn
+nltk
+numpy
